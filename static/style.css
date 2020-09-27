@@ -1,0 +1,122 @@
+
+body {
+  color: white;
+  background-image: url(stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 70%;
+}
+#navbar a:hover {
+color: #86bd98;
+}
+#descript {
+    position: relative;
+    background-color: rgba(29, 33, 13, 0.6);
+}
+#descript h4{
+    color: white;
+}
+
+.description {
+    color: #b7f7b2;
+    text-align: center;
+    direction: rtl;
+}
+
+#main-headline {
+    color: #b7f7b2;
+    text-align: center;
+}
+
+.reg-btn {
+  position: absolute;
+  left: 45%;
+}
+#register-form {
+    position: absolute;
+}
+
+.form-register label {
+ color: white
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+form {
+    margin-left: 6px;
+}
+
+#side-nav {
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    text-align: right;
+    background-color: rgba(200,200,200,0.8);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#side-nav a:link, a:visited {
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#side-nav a:hover, a:active {
+  color: #666666;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#footer a:link{
+text-decoration: none;
+color: white;
+}
+
+#footer a:hover{
+text-decoration: none;
+color: #666666;
+}
+
+th, td {
+text-align: right;
+}
+
+hr{
+   position: relative;
+            top: 20px;
+            border: none;
+            height: 8px;
+            background: #a6a6a6;
+            margin-bottom: 50px;
+            margin-left: 30px;
+}
+#carousel img {
+   right: 50%;
+   width: 300px;
+   height: 300px;
+}
+
+sub a:link{
+    text-decoration: none;
+    color: white;
+}
+
+sub a:hover{
+    color: #65af90;
+}
+
+#about p{
+    text-align: right;
+}

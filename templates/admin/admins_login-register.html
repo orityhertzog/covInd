@@ -1,0 +1,53 @@
+{% extends 'home.html' %}
+{% block content %}
+
+<header><h1>כניסת מנהל רשום</h1></header>
+<div class="admin-login">
+    <form method="post" name="admin-login">
+        <div class="form-group form-register">
+            <label for="email"><span style="color: red">*</span>דואר אלקטרוני</label>
+            <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="name@mail.com" required>
+        </div>
+           <div class="form-group form-register">
+            <label for="password"><span style="color: red">*</span>סיסמא</label>
+            <input type="password" class="form-control form-control-sm" id="password" name="password" required>
+        </div>
+        <button type="submit" name="login" class="btn btn-primary">כניסה</button>
+    </form>
+</div>
+<br><br>
+<header><h1>רישום מנהל חדש</h1></header>
+<div class="admin-login">
+    <form method="post" name="admin-login">
+         <div class="form-group form-register">
+            <label for="full_name"><span style="color: red">*</span>שם מלא</label>
+            <input type="text" class="form-control form-control-sm" id="full_name" name="full_name" required>
+         </div>
+        <div class="form-group form-register">
+            <label for="email_"><span style="color: red">*</span>דואר אלקטרוני</label>
+            <input type="email" class="form-control form-control-sm" id="email_" name="email" placeholder="name@mail.com" required>
+        </div>
+           <div class="form-group form-register">
+            <label for="password_"><span style="color: red">*</span>סיסמא</label>
+            <input type="password" class="form-control form-control-sm" id="password_" name="password" required>
+        </div>
+        <button type="submit" name="register" class="btn btn-primary">הרשמה</button><br><br>
+    </form>
+</div>
+<br><br>
+<header><h1>מחיקת חשבון מנהל</h1></header>
+<div class="admin-erase">
+    <form method="post" name="admin-erase">
+        <div class="form-group form-register">
+            <label for="_email"><span style="color: red">*</span>דואר אלקטרוני</label>
+            <input type="email" class="form-control form-control-sm" id="_email" name="email" placeholder="name@mail.com" required>
+        </div>
+           <div class="form-group form-register">
+            <label for="_password"><span style="color: red">*</span>סיסמא</label>
+            <input type="password" class="form-control form-control-sm" id="_password" name="password" required>
+        </div>
+        <button type="submit" name="erase" class="btn btn-danger"><i class="fa fa-trash"></i> מחיקת חשבון מנהל </button><br><br>
+    </form>
+</div>
+
+{% endblock %}

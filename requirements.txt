@@ -1,0 +1,19 @@
+argon2-cffi==19.1.0
+bcrypt @ file:///C:/ci/bcrypt_1597918112552/work
+certifi==2020.6.20
+cffi @ file:///C:/ci/cffi_1600699250966/work
+click==7.1.2
+cryptography @ file:///C:/ci/cryptography_1598873979408/work
+Flask==1.1.2
+gunicorn==20.0.4
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+passlib==1.7.2
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pymongo==3.11.0
+python-dotenv==0.14.0
+six==1.15.0
+Werkzeug==1.0.1
+wincertstore==0.2

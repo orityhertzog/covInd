@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>covInD</title>
+
+</head>
+<body>
+    <br><header><h1>שלום {{full_name}}</h1></header>
+    <center>
+        <div>
+            <br><h3> :מספר הכרטיסים שהוזמנו סך הכל </h3>
+            <h4>{{tickets_amount}}</h4>
+            <hr>
+            <div>
+                <h3>:כרטיסים לפי שמות </h3>
+                <table class="table table-dark table-striped table-bordered table-hover table-sm ml-3">
+                    <tr>
+                        <th>כמות כרטיסים</th>
+                        <th>שם משתתף</th>
+                    </tr>
+                {% for user in tickets_by_name %}
+                <tr>
+                    <td>{{user.amount}}</td>
+                    <td>{{user._id}}</td>
+                </tr>
+
+                {% endfor %}
+                </table>
+            </div>
+
+            <hr>
+            <table class="table table-dark table-striped table-bordered table-hover table-sm ml-3">
+               <h3> :ציוד </h3>
+                <thead>
+                    <tr>
+                        <th>כמות</th>
+                        <th>שם הציוד</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{equipment[0]}}</td>
+                        <td>מחצלת</td>
+                    </tr>
+                      <tr>
+                          <td>{{equipment[1]}}</td>
+                          <td>אוכל</td>
+                    </tr>
+                      <tr>
+                          <td>{{equipment[2]}}</td>
+                          <td>כלי נגינה</td>
+                    </tr>
+                      <tr>
+                          <td>{{equipment[3]}}</td>
+                          <td>ציוד קמפינג</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="content container">
+            <a href="{{url_for('admin_logout')}}" class="btn btn-danger mb-2" style="color: white">התנתק</a>
+            </div>
+        </div>
+    </center>
+
+
+</body>
+</html>
