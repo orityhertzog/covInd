@@ -1,4 +1,4 @@
-argon2-cffi==19.1.0
+#argon2-cffi==19.1.0
 bcrypt @ file:///C:/ci/bcrypt_1597918112552/work
 certifi==2020.6.20
 cffi @ file:///C:/ci/cffi_1600699250966/work
