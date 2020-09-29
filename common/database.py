@@ -2,7 +2,7 @@ import pymongo
 
 
 class Database:
-    URI = "mongodb+srv://orityhertzog:<049884383>@cluster0.5hxkb.mongodb.net/<covInd-20>?retryWrites=true&w=majority"
+    URI = 'mongodb+srv://orityhertzog:049884383@cluster0.5hxkb.mongodb.net/Cluster0?retryWrites=true&w=majority'
     DATABASE = pymongo.MongoClient(URI).get_default_database()
 
     @staticmethod
