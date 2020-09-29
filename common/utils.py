@@ -1,6 +1,5 @@
 from passlib.hash import pbkdf2_sha512
 
-
 class Utils:
     @staticmethod
     def encrypt_pass(password):
