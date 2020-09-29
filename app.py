@@ -4,7 +4,7 @@ from common.database import Database
 from common.utils import Utils
 from models.users import Users
 from models.admins import Admin
-from email_sender import email
+
 
 app = Flask(__name__)
 app.secret_key = os.urandom(64)
