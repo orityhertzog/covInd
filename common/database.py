@@ -1,8 +1,9 @@
 import pymongo
+import os
 
 
 class Database:
-    URI = "mongodb://127.0.0.1:27017/covInd"
+    URI = os.environ.get("MONGODB_URL")
     DATABASE = pymongo.MongoClient(URI).get_database()
 
     @staticmethod
@@ -20,5 +21,3 @@ class Database:
     @staticmethod
     def find_one_by(collection, query):
         return Database.DATABASE[collection].find_one(query)
-
-
