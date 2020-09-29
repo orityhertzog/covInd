@@ -1,10 +1,9 @@
 import pymongo
-import os
 
 
 class Database:
-    URI = os.environ.get("MONGODB_URL")
-    DATABASE = pymongo.MongoClient(URI).get_database()
+    URI = "mongodb+srv://orityhertzog:<049884383>@cluster0.5hxkb.mongodb.net/<covInd-20>?retryWrites=true&w=majority"
+    DATABASE = pymongo.MongoClient(URI).get_default_database()
 
     @staticmethod
     def insert(collection, item):

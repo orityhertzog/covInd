@@ -9,8 +9,7 @@ from email_sender import email
 app = Flask(__name__)
 app.secret_key = os.urandom(64)
 ADMIN = app.config.update(ADMIN=os.environ.get('ADMIN'))
-SENDER = app.config.update(SENDER=os.environ.get('SENDER'))
-app.config.update(MAIL_PASS=os.environ.get('MAIL_PASS'))
+
 
 @app.route('/')
 def home():
@@ -139,7 +138,6 @@ def admins_enter():
         email = request.form['email']
         password = Utils.encrypt_pass(request.form['password'])
         items = Admin.toJson(full_name, email, password)
-        print(current_app.config.get('ADMIN', ''))
         if email != current_app.config.get('ADMIN', ''):
             return render_template('user/unsuccessful_register.html', message='דואר אלקטרוני זה אינו שייך למנהל',
                                    url='admins_enter')
