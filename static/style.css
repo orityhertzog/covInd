@@ -7,11 +7,19 @@ body {
   background-attachment: fixed;
   width: 70%;
 }
+button {
+    width: auto;
+}
+
 #navbar a:hover {
 color: #86bd98;
 }
+#navbar a {
+    font-size: 2vw;
+}
+
 #descript {
-    position: relative;
+    position: center;
     background-color: rgba(29, 33, 13, 0.6);
 }
 #descript h4{
@@ -19,7 +27,7 @@ color: #86bd98;
 }
 
 .description {
-    color: #b7f7b2;
+    font-size: 2.5vw;
     text-align: center;
     direction: rtl;
 }
@@ -27,6 +35,7 @@ color: #86bd98;
 #main-headline {
     color: #b7f7b2;
     text-align: center;
+    font-size: 4vw;
 }
 
 .reg-btn {
@@ -44,6 +53,7 @@ color: #86bd98;
 header {
     color: white;
     text-align: center;
+    font-size: 4vw;
 }
 form {
     margin-left: 6px;
@@ -51,24 +61,33 @@ form {
 
 #side-nav {
     position: fixed;
+    /*width: auto;
+    height: auto;*/
     right: 0;
-    bottom: 120px;
+    bottom:18%;
     text-align: right;
-    background-color: rgba(200,200,200,0.8);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+}
+#sidebarCollapse {
+    width:18vw;
+}
+
+#sidebar{
+    display: block !important;
+    width: auto;
+    height: auto;
 }
 #side-nav a:link, a:visited {
   color: black;
-  padding: 15px 25px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   display: inline-block;
 }
 
 #side-nav a:hover, a:active {
   color: #666666;
+}
+#side-nav a {
+    font-size: 1.5vw;
 }
 
 footer {
@@ -78,7 +97,9 @@ footer {
     padding: 0;
 }
 
-
+#footer p{
+font-size:1.5vw;
+}
 #footer a:link{
 text-decoration: none;
 color: white;
@@ -94,18 +115,14 @@ text-align: right;
 }
 
 hr{
-   position: relative;
-            top: 20px;
-            border: none;
-            height: 8px;
-            background: #a6a6a6;
-            margin-bottom: 50px;
-            margin-left: 30px;
+   border: none;
+   height: 1.8vh;
+   background: #a6a6a6;
 }
 #carousel img {
    right: 50%;
-   width: 300px;
-   height: 300px;
+   width:30vw;
+   height:30vw;
 }
 
 sub a:link{
@@ -117,6 +134,67 @@ sub a:hover{
     color: #65af90;
 }
 
-#about p{
-    text-align: right;
+
+#about {
+    position: relative;
+    background-color: rgba(29, 33, 13, 0.6);
 }
+#about h5 {
+    font-size: 2vw;
+    color: 565656;
+    text-align: right;
+
+}
+.bg-light {
+    background-color: rgba(200,200,200,0.8) !important;
+}
+#map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+select, input {
+    font-size:1.5vw !important;
+}
+.checkbox {
+    width: 2vw;
+}
+
+form {
+    font-size: 1.5vw !important;
+}
+form button {
+    width: auto !important;
+    color:white;
+    font-size: 1.5vw !important;
+}
+.asterisk {
+    color: red;
+}
+
+
+@media (max-width: 550px) {
+body{
+    width: 90%;
+}
+#navbar a{
+    display: block !important;
+    width: auto;
+    height: auto;
+}
+#sidebar a{
+    display: block !important;
+}
+
+

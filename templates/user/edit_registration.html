@@ -1,23 +1,23 @@
 {% extends 'home.html' %}
 {% block content %}
-<header><h1>עריכת הרשמה</h1></header>
+<header>עריכת הרשמה</header>
 {% if user %}
     <section>
-        <div  class="register-form mb-3">
+        <div class="register-form mb-3">
             <form action="{{ url_for('edit_register', email_=user.email)}}" method="post" name="edit">
-                <div class="form-group form-register form-group">
+                <div class="form-group form-register form-group col-sm-6">
                     <label for="full_name">שם מלא</label>
                     <input type="text" readonly class="form-control form-control-sm" name="full_name" id="full_name" value="{{user['full_name']}}" disabled>
                 </div>
-                <div class="form-group form-register">
+                <div class="form-group form-register col-sm-6">
                     <label for="email_">אימייל</label>
                     <input type="email" class="form-control form-control-sm" name="email" id="email_" value="{{user['email']}}" disabled>
                 </div>
-                <div class="form-group form-register">
+                <div class="form-group form-register col-sm-6">
                     <label for="passwords">סיסמא</label>
                     <input type="password" class="form-control from-control-sm" id="passwords" name="password" value="********" disabled>
                 </div>
-                <div class="form-group form-register">
+                <div class="form-group form-register col-sm-6">
                     <label for="tickets_amount">ערוך מספר כרטיסים</label>
                     <select class="custom-select" id="tickets_amount" name="tickets_amount">
                         <option value="1">1</option>
@@ -27,39 +27,39 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-                <div class="form-check form-register">
+                <div class="form-check form-register col-sm-6">
                      <input type="checkbox" class="form-check-input" id="mat_" name="mat">
                     <label for="mat_" class="form-check-label">מחצלת</label>
                 </div>
-                <div class="form-check form-register">
+                <div class="form-check form-register col-sm-6">
                     <input type="checkbox" class="form-check-input" id="instrument_" name="instrument">
                     <label for="instrument_" class="form-check-label">כלי נגינה</label>
                 </div>
-                <div class="form-check form-register">
+                <div class="form-check form-register col-sm-6">
                     <input type="checkbox" class="form-check-input" id="food_" name="food">
                     <label for="food_" class="form-check-label">אוכל</label>
                 </div>
-                <div class="form-check form-register">
+                <div class="form-check form-register col-sm-6">
                     <input type="checkbox" class="form-check-input" id="camp_" name="camp">
                     <label for="camp_" class="form-check-label">ציוד קמפינג</label>
                 </div>
 
-                <br><button type="submit" name="edit" class="btn btn-warning"><i class="fa fa-cog"></i> ערוך רישום </button>
+                <br><button type="submit" name="edit" class="btn btn-warning p-1"><i class="fa fa-cog"></i> ערוך רישום </button>
             </form>
         </div>
     </section>
 {% else %}
 <div  class="register-form mb-3">
     <form method="post">
-        <div class="form-group form-register">
-            <label for="email" ><span style="color: red">*</span>דואר אלקטרוני</label>
+        <div class="form-group form-register col-sm-6">
+            <label for="email" ><span class="asterisk">*</span>דואר אלקטרוני</label>
             <input type="email" placeholder="name@mail.com" class="form-control form-control-sm" id="email" name="email" required>
         </div>
-        <div class="form-group form-register">
-            <label for="password" > <span style="color: red">*</span>סיסמא</label>
+        <div class="form-group form-register col-sm-6">
+            <label for="password" > <span class="asterisk">*</span>סיסמא</label>
             <input type="password" class="form-control form-control-sm" id="password" name="password" required>
         </div>
-        <button class="btn btn-warning" type="submit"><i class="fa fa-cog"></i> עריכת הרשמה </button>
+        <button class="btn btn-warning p-1 ml-3" type="submit"><i class="fa fa-cog"></i> עריכת הרשמה </button>
     </form>
 </div>
 {% endif %}

@@ -1,8 +1,8 @@
 {% extends 'home.html' %}
 {% block content %}
 <div class="content mb-3">
-    <header><h1>{{ message }}</h1></header>
-    <center><a class="btn btn-primary" href="{{url_for(url, email_=' ')}}"> חזור </a></center>
+    <header>{{ message }}</header>
+    <center><a class="btn btn-primary p-1" href="{{url_for(url, email_=' ')}}"> חזור </a></center>
 </div>
 
 {% endblock %}

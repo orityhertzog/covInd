@@ -1,17 +1,17 @@
 {% extends 'home.html' %}
 {% block content %}
-<header><h1>ביטול הרשמה</h1></header>
+<header>ביטול הרשמה</header>
 <div  class="register-form mb-3">
     <form method="post">
-        <div class="form-group form-register">
-            <label for="email" > <span style="color: red">*</span>דואר אלקטרוני</label>
+        <div class="form-group form-register col-sm-6">
+            <label for="email" > <span class="asterisk">*</span>דואר אלקטרוני</label>
             <input type="email" placeholder="name@mail.com" class="form-control form-control-sm" id="email" name="email" required>
         </div>
-        <div class="form-group form-register">
-            <label for="password" > <span style="color: red">*</span>סיסמא</label>
+        <div class="form-group form-register col-sm-6">
+            <label for="password" > <span class="asterisk">*</span>סיסמא</label>
             <input type="password" class="form-control form-control-sm" id="password" name="password" required>
         </div>
-        <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i> בטל רישום </button>
+        <button class="btn btn-danger ml-3 p-1" type="submit"><i class="fa fa-trash"></i> בטל רישום </button>
     </form>
 </div>
 {% endblock %}

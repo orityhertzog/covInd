@@ -2,13 +2,13 @@
 {% block content %}
 <div class="content mb-3">
     <header>
-        <h1>{{name}}</h1>
-        <h1>ההרשמה נקלטה בהצלחה</h1>
-        <h2>הודעה מתאימה תשלח לדואר האלקטרוני שהוזן</h2>
+        {{name}}<br>
+        ההרשמה נקלטה בהצלחה<br>
+<!--        <h2>הודעה מתאימה תשלח לדואר האלקטרוני שהוזן</h2>-->
     </header>
     <center>
-        <a class="btn btn-danger" href="{{url_for('cancel_register')}}"> <i class="fa fa-trash"> </i> ביטול הרשמה  </a>
-        <a class="btn btn-warning" href="{{url_for('edit_register', email_='#')}}"> <i class="fa fa-cog"> </i> עריכת הרשמה </a>
+        <a class="btn btn-danger p-1" href="{{url_for('cancel_register')}}"> <i class="fa fa-trash"> </i> ביטול הרשמה  </a>
+        <a class="btn btn-warning p-1" href="{{url_for('edit_register', email_='#')}}"> <i class="fa fa-cog"> </i> עריכת הרשמה </a>
     </center>
 </div>
 
