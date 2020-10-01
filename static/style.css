@@ -168,7 +168,19 @@ select, input {
     font-size:1.5vw !important;
 }
 .checkbox {
-    width: 2vw;
+    width: 15vw;
+
+}
+li {
+list-style-type: none;
+}
+.chkLabel input {
+    float: left;
+    margin-top:0.5rem;
+}
+chkLabel label {
+    display: block;
+    margin-left: 1.5rem;
 }
 
 form {
@@ -196,10 +208,10 @@ body{
 #sidebar a{
     display: block !important;
 }
+
 #sidebar-button{
     text-decoration: none;
     border: none !important;
-    background-color: #666666;
 }
 
 
