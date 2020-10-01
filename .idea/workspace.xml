@@ -4,12 +4,7 @@
     <list default="true" id="a995125a-9ffc-4457-bf4d-2a646ff11938" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admins_login-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admins_login-register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admins_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admins_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/confirm_editing.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/confirm_editing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/confirm_registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/confirm_registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/edit_registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit_registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

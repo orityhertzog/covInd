@@ -89,10 +89,6 @@ form {
 #side-nav a {
     font-size: 1.5vw;
 }
-#sidebar-button{
-    border: none !important;
-    background-color: #666666;
-}
 
 footer {
     bottom: 0;
@@ -178,7 +174,7 @@ select, input {
 form {
     font-size: 1.5vw !important;
 }
-form button {
+button {
     width: auto !important;
     color:white;
     font-size: 1.5vw !important;
@@ -199,6 +195,11 @@ body{
 }
 #sidebar a{
     display: block !important;
+}
+#sidebar-button{
+    text-decoration: none;
+    border: none !important;
+    background-color: #666666;
 }
 
 
